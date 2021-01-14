@@ -1,0 +1,231 @@
+/*
+Style guide:
+0.RESET
+1.LAYOUT
+2.GENERIC ITEMS
+3.PART OF THE WEB
+4.LIST
+5.FORMS
+6.ANIMATIONS
+
+-----------------
+
+COLOR 1 ==> #2C3E56;
+COLOR 2 ==> #34495E;
+COLOR 3 ==> #3498DB;
+COLOR 4 ==> #FFFFFF;
+
+*/
+
+/*0 RESET*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*1 LAYOUT*/
+body{
+    text-align: center;
+    font:300 20px/1.7 'Roboto Condensed', sans-serif;
+}
+.header{
+   
+    justify-content: center;
+    display:flex ;
+    align-items: center;
+
+
+}
+.portafolio{
+    text-align: left;
+}
+
+/*2 GENERIC ITEMS*/
+
+.header{
+    height: 450px;
+    background-image: url(../img/pexels-markus-spiske-965345.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    
+    
+}
+
+.button{
+    border: 2px solid #fff;
+    padding: 10px 40px; 
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+
+}
+.navigationBar ul li {
+    display: inline-block;
+    
+}
+.list-language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.list-language figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+
+.navigationBar,.navigationBar ul li a{
+    background-color:#2C3E50 ;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    padding: 20px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font:40px 'Stint Ultra Condensed', cursive;
+}
+.title{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-family: 'Stint Ultra Condensed',cursive;
+}
+p{
+    margin-bottom: 40px;
+}
+/*3 PART OF THE WEB*/
+.content{
+    padding: 80px 0;
+}
+.whoIam{
+    background: #2C3E56;
+    color: #ffffff;
+
+}
+.whoIam p{
+    max-width: 1055px;
+    margin: 0 auto;
+}
+.language{
+    background-color:#34495E;
+    color: #ffff;
+}
+.portafolio{
+    background-image: url(../img/pexels-miguel-á-padriñán-68562.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#ffff;
+    
+
+
+}
+.contain{
+    max-width: 1055;
+    margin: 0 auto;
+
+
+}
+.contain p{
+    max-width: 450px;
+}
+.contactMe{
+    color: #34455e;
+    padding-bottom: 0;
+
+}
+.contactMe .map img{
+    max-width: 100%;
+    width: 100%;
+
+}
+
+/*4 LIST */
+.list-language figure{
+    position: relative;
+    width: 150px;
+    height: 190px;
+    
+    
+    
+}
+.list-language figure:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius:50% ;
+    z-index: 0;
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+}
+.list-language li{
+    padding: 0 30px;
+
+}
+.list-language figure figcaption {
+    
+    position: relative;
+    left: 0;
+    top: 15px;
+    bottom: -30px;
+}
+.list-language img{
+    position: relative;
+    z-index: 1;
+    max-width: 75%;
+    width: 65%;
+    
+
+    
+    
+}
